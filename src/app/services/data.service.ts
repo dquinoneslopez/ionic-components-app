@@ -18,4 +18,12 @@ export class DataService {
   getMenuOptions()  {
     return this.httpClient.get<Componente[]>('/assets/data/menu-options.json');
   }
+  
+  getAlbums()  {
+    return this.httpClient.get<any>('https://jsonplaceholder.typicode.com/albums');
+  }
+  
+  getHeroes()  {
+    return this.httpClient.get<Componente[]>('/assets/data/superheroes.json');
+  }
 }
